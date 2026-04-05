@@ -49,7 +49,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // ─── Health Check ──────────────────────────────────────────────────────────
-app.get('/health', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({
     success: true,
     message: 'Finance API is up and running 🚀',
@@ -59,8 +59,8 @@ app.get('/health', (req, res) => {
 });
 
 // ─── API Routes ────────────────────────────────────────────────────────────
-app.use('/api/auth',    authRoutes);
-app.use('/api/users',   userRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/users', userRoutes);
 app.use('/api/records', recordRoutes);
 
 // ─── 404 Handler ───────────────────────────────────────────────────────────
