@@ -1,6 +1,6 @@
-# 💰 FinanceTracker — Full-Stack Finance Dashboard
+# 💰 FinanceTracker — Backend API for Finance Dashboard
 
-A full-stack finance management system with **role-based access control**, real-time dashboard analytics, and complete transaction management.
+A finance management system with **role-based access control**, real-time dashboard analytics, and complete transaction management.
 
 ---
 
@@ -30,13 +30,6 @@ FinanceTracker/
 │   ├── utils/        ← JWT helpers, response formatter
 │   ├── validations/  ← Joi input validation schemas
 │   └── server.js     ← Entry point
-│
-└── frontend/         ← React + Vite app (port 5173)
-    └── src/
-        ├── components/   ← GlassCard, GlassButton, AddTransactionModal, Navbar
-        ├── context/      ← AuthContext (global auth state)
-        ├── pages/        ← Dashboard, Records, Login, Register
-        └── services/     ← Axios API client
 ```
 
 ---
@@ -188,19 +181,6 @@ npm run dev
 | Helmet | HTTP security headers |
 | Morgan | Request logging |
 | Express Rate Limit | Brute-force protection (100 req / 15 min) |
-
-### Frontend
-| Package | Purpose |
-|---|---|
-| React 19 + Vite | UI framework + build tool |
-| React Router v7 | Client-side routing |
-| Axios | HTTP client with interceptors |
-| Recharts | Area chart + Pie chart |
-| Framer Motion | Animations & transitions |
-| Tailwind CSS v4 | Utility-first styling |
-| React Toastify | Toast notifications |
-| Lucide React | Icon library |
-
 ---
 
 ## 🔒 Security Features
