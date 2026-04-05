@@ -81,20 +81,6 @@ npm run dev
 
 ---
 
-### 3. Setup the Frontend
-
-Open a **new terminal**:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-✅ App running at `http://localhost:5173`
-
----
-
 ## 👤 User Roles & Permissions
 
 | Action | Viewer | Analyst | Admin |
